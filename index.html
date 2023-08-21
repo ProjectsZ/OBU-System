@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sistema OBU</title>
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+  <link rel="stylesheet" href="css/card.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+  <style>
+    body {font-family: Arial;}
+    
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+    
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+    
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+    
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+    </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/imgs/log_obu.png" alt="" width="36">
+        <span> Sistema de OBU </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <br>
+
+  <div class="grid">
+    <div class="left">
+      <br>
+      <span> General </span>
+      <ul>
+        <li> <a onclick="openPage(event, 'requisitos')"> <i class="far fa-folder-open fa-lg fa-fw"></i> Requisitos </a> </li>
+        <li> <a onclick="openPage(event, 'enlistarme')"> <i class="fa-solid fa-user-plus"></i> Enlistarme </a> </li>
+        <li> <a onclick="openPage(event, 'seguimiento')"> <i class="far fa-newspaper fa-lg fa-fw"></i> Seguimiento </a> </li>
+        <li> <a onclick="openPage(event, 'beneInternado')"> <i class="fas fa-house fa-lg fa-fw"></i> Beneficiados internado </a> </li>
+        <li> <a onclick="openPage(event, 'beneComedor')"> <i class="fa-solid fa-cookie-bite"></i> Beneficiados Comedor </a> </li>
+      </ul>
+    </div>
+
+    <!-- Requisitos ***************************************************************************************************** -->
+    <div class="right tabcontent" id="requisitos">
+      <div class="card-list">
+        <div class="card">
+          <h2 class="card-title">Título de la tarjeta</h2>
+          <p>Descripción</p>
+          <ul>
+            <li>Elemento de la lista 1</li>
+            <li>Elemento de la lista 2</li>
+            <li>Elemento de la lista 3</li>
+            <li>Elemento de la lista 4</li>
+            <li>Elemento de la lista 5</li>
+            <li>Elemento de la lista 6</li>
+            <li>Elemento de la lista 7</li>
+            <li>Elemento de la lista 8</li>
+            <li>Elemento de la lista 9</li>
+            <li>Elemento de la lista 10</li>
+            <li>Elemento de la lista 11</li>
+            <li>Elemento de la lista 12</li>
+            <li>Elemento de la lista 13</li>
+            <li>Elemento de la lista 14</li>
+            <li>Elemento de la lista 15</li>
+          </ul>
+        </div>
+      </div>
+        
+      <div class="card-container">
+          <div class="card">
+              <img src="assets/imgs/dbz.jpg" alt="Imagen 1" onclick="openImage('assets/imgs/dbz.jpg')">
+              <h2>Tarjeta 1</h2>
+              <p>Descripción</p>
+          </div>
+          <div class="card">
+              <img src="assets/imgs/unasimg.jpg" alt="Imagen 2" onclick="openImage('assets/imgs/unasimg.jpg')">
+              <h2>Tarjeta 2</h2>
+              <p>Descripción</p>
+          </div>
+          <div class="card">
+              <img src="assets/imgs/LogoSGA_64 (1).png" alt="Imagen 3" onclick="openImage('assets/imgs/LogoSGA_64 (1).png')">
+              <h2>Tarjeta 3</h2>
+              <p>Descripción</p>
+          </div>
+      </div>
+      <div id="lightbox" class="lightbox">
+          <span class="close-btn" onclick="closeImage()">&times;</span>
+          <img id="lightbox-image" src="" alt="Imagen Ampliada">
+      </div>
+    </div>
+
+    <!-- Enlistarme ***************************************************************************************************** -->
+    <div class="right container mt-5 tabcontent" id="enlistarme">
+       
+        <input class="form-control" type="file" id="formFileStudent" accept=".xlsx">
+  
+        <h2>Formulario de Registro</h2>
+        <form id="registro-form">
+          <div class="flex bottom">
+            <div class="form-group">
+              <label for="dni">DNI</label>
+              <input type="number" class="form-control" id="dni" name="dni" required>
+              <div id="dni-error" class="text-danger"></div>
+            </div>
+            <div>
+              <button type="button" class="btn btn-light" id="click_buscarDNI">  <i class="fa-solid fa-magnifying-glass"></i>  </button>
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="ap_paterno">Apellido Paterno</label>
+            <input type="text" class="form-control" id="ap_paterno" name="ap_paterno" required>
+            <div id="ap_paterno-error" class="text-danger"></div>
+          </div>
+          <div class="form-group">
+            <label for="ap_materno">Apellido Materno</label>
+            <input type="text" class="form-control" id="ap_materno" name="ap_materno" required>
+            <div id="ap_materno-error" class="text-danger"></div>
+          </div>
+          <div class="form-group">
+            <label for="ap_nombre">Nombre Completo</label>
+            <input type="text" class="form-control" id="ap_nombre" name="ap_nombre" required>
+            <div id="ap_nombre-error" class="text-danger"></div>
+          </div>
+  
+          <div class="form-group">
+            <label for="carrera">Carrera Profesional</label>
+            <select class="form-select form-select-lg mb-3" id="carrera" name="carrera">
+                <option selected> PROFESION </option>
+                <option value="0"> NINGUNO </option>
+                <option value="1"> ADMINISTRACION </option>
+                <option value="2"> AGRONOMIA </option>
+                <option value="3"> CONTABILIDAD </option>
+                <option value="4"> ECONOMIA </option>
+                <option value="5"> INGENIERIA AMBIENTAL </option>
+                <option value="6"> INGENIERIA EN CONSERVACION DE SUELOS Y AGUA </option>
+                <option value="7"> INGENIERIA EN RECURSOS NATURALES RENOVABLES </option>
+                <option value="8"> INGENIERIA EN INDUSTRIAS ALIMENTARIAS </option>
+                <option value="9"> INGENIERIA EN INFORMATICA Y SISTEMAS </option>
+                <option value="10"> INGENIERIA FORESTAL </option>
+                <option value="11"> INGENIERIA MECANICA ELECTRICA </option>
+                <option value="12"> ZOOTECNIA </option>
+            </select>
+        </div>
+          <div class="form-group">
+            <label for="institucion">Institución Educativa</label>
+            <input type="text" class="form-control" id="institucion" name="institucion" required>
+          </div>
+          <div class="form-group">
+            <label for="institucion">Correo Institucional</label>
+            <input type="text" class="form-control" id="institucion_correo" name="institucion" required>
+          </div>
+          <div class="form-group">
+            <label for="anho_ciclo">Año/Ciclo</label>
+            <input type="number" class="form-control" id="anho_ciclo" name="anho_ciclo" required>
+            <div id="anho_ciclo-error" class="text-danger"></div>
+          </div>
+          <button type="submit" class="btn btn-primary">Registrar</button>
+        </form>
+      </div>
+
+    <!-- Seguimiento ***************************************************************************************************** -->
+    <div class="right tabcontent" id="seguimiento">
+      
+    </div>
+
+  <!-- Beneficiado internado ***************************************************************************************************** -->
+    <div class="right tabcontent" id="beneInternado">
+      <section class="section-table">
+        <div class="section-inputs">
+          <!--<input class="buton-input" type="file" id="file-input" accept=".xlsx"> -->
+          
+            <input class="form-control" type="file" id="formFile" accept=".xlsx">
+          
+        </div>
+        <br>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                      id="selectANHO" onchange="loadAnho('selectANHO')">
+                <option selected> AÑO </option>
+                <option value="2023"> 2023 </option>
+                <option value="2022"> 2022 </option>
+                <option value="2021"> 2021 </option>
+                <option value="2020"> 2020 </option>
+                <option value="2019"> 2019 </option>
+                <option value="2018"> 2018 </option>
+                <option value="2017"> 2017 </option>
+                <option value="2016"> 2016 </option>
+              </select>
+            </div>
+            <div class="col-6">
+              <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                      id="selectEPRO" onchange="loadSelect('selectEPRO', 'escuelaProfesional', 'NINGUNO')">
+                <option selected> PROFESION </option>
+                <option value="0"> NINGUNO </option>
+                <option value="1"> ADMINISTRACION </option>
+                <option value="2"> AGRONOMIA </option>
+                <option value="3"> CONTABILIDAD </option>
+                <option value="4"> ECONOMIA </option>
+                <option value="5"> INGENIERIA AMBIENTAL </option>
+                <option value="6"> INGENIERIA EN CONSERVACION DE SUELOS Y AGUA </option>
+                <option value="7"> INGENIERIA EN RECURSOS NATURALES RENOVABLES </option>
+                <option value="8"> INGENIERIA EN INDUSTRIAS ALIMENTARIAS </option>
+                <option value="9"> INGENIERIA EN INFORMATICA Y SISTEMAS </option>
+                <option value="10"> INGENIERIA FORESTAL </option>
+                <option value="11"> INGENIERIA MECANICA ELECTRICA </option>
+                <option value="12"> ZOOTECNIA </option>
+              </select>
+            </div>
+            <div class="col">
+              <!-- <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="ESTUDIANTE">
+                <label class="form-check-label" for="inlineCheckbox1"> ESTUDIANTE </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="INGRESANTE">
+                <label class="form-check-label" for="inlineCheckbox2"> INGRESANTE </label>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <table class="mi-tabla" id="tabla-personas">
+          <thead>
+            <tr>
+              <th>N°</th>
+              <th>Código</th>
+              <th >Nombres y Apellidos</th>
+              <!-- <th>Sexo</th> -->
+              <th >Escuela Profesional</th>
+              <th>Promedio Ponderado</th>
+              <!-- <th>Comedor</th> -->
+              <!-- <th>Estado</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Agrega más filas según sea necesario -->
+          </tbody>
+        </table>
+      </section>
+      <br><br>
+    
+    </div>
+
+     <!-- Beneficiado comedor ***************************************************************************************************** -->
+     <div class="right tabcontent" id="beneComedor">
+      
+     </div>
+
+  </div>
+
+  
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">© 2023 ,Todos los derechos reservados</p>
+      <ul class="footer-links">
+        <li></li>
+      </ul>
+    </div>
+  </footer>
+  <br><br>
+  <div class="panel" id="panel">
+    <div class="close" onClick="mostrarPanel(false)"> X </div>
+  </div>
+  <!-- <div class="panel visible" id="panel"><span>1</span><span>20210619</span><span>ABURTO YSUIZA, JANIRA JAMILETH</span><span>F</span><span>ADMINISTRACION</span><span>14.53</span><span>SI</span><span>ESTUDIANTE</span>
+    <div class="close" onClick="mostrarPanel(false)"> X </div>
+  </div> -->
+
+  <script>
+    function openPage(evt, nameID) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(nameID).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+
+  <script src="https://kit.fontawesome.com/639292d40c.js" crossorigin="anonymous"></script>
+  <script src="/js/app.js"> </script>
+  <script src="js/formulario.js"></script>
+  <script src="js/modal.js"></script>
+</body>
+</html>
+

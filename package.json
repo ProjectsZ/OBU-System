@@ -1,0 +1,11 @@
+{
+  "name": "obu",
+  "version": "1.0.0",
+  "description": "Sistema OBU de filtrado de estudiantes beneficiados en residencia y comedor",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
