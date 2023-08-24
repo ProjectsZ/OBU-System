@@ -63,3 +63,21 @@ document.getElementById('registro-form').addEventListener('submit', function(eve
     }
 });
 
+
+
+// Cuando se selecciona una imagen, mostrar la vista previa y activar el botón de edición
+document.getElementById('imageInput').addEventListener('change', function (event) {
+  const image = document.getElementById('imagePreview');
+
+  const selectedImage = event.target.files[0];
+  if (selectedImage) {
+    const reader = new FileReader();
+
+    reader.onload = function (e) {
+      image.src = e.target.result;
+      editButton.disabled = false;
+    };
+
+    reader.readAsDataURL(selectedImage);
+  }
+});

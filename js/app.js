@@ -270,7 +270,7 @@ function insertarDatosEnTabla(personas){
       
       let hojaCalculo = libroTrabajo.Sheets[libroTrabajo.SheetNames[0]];
       let jsonData = XLSX.utils.sheet_to_json(hojaCalculo);
-  
+    
       let personas = [];
       jsonData.forEach(unasino => {
         personas.push(new Unasino(

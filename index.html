@@ -5,11 +5,12 @@
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
   <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
   <link rel="stylesheet" href="css/card.css">
+  <link rel="stylesheet" href="css/formulario.css">
   <link rel="stylesheet" href="css/styles.css">
 
 
   <style>
-    body {font-family: Arial;}
+    body {font-family: Arial; overflow-y: hidden;}
     
     /* Style the tab */
     .tab {
@@ -41,11 +42,13 @@
     }
     
     /* Style the tab content */
-    .tabcontent {
+    .tabcontent, .tabcontent1 {
       display: none;
       padding: 6px 12px;
       border: 1px solid #ccc;
       border-top: none;
+      height: 90vh;
+      overflow-y: auto;
     }
     </style>
 
@@ -67,59 +70,87 @@
 
   <div class="grid">
     <div class="left">
-      <br>
+      <br><br> <br>
       <span> General </span>
+      <br>
       <ul>
-        <li> <a onclick="openPage(event, 'requisitos')"> <i class="far fa-folder-open fa-lg fa-fw"></i> Requisitos </a> </li>
-        <li> <a onclick="openPage(event, 'enlistarme')"> <i class="fa-solid fa-user-plus"></i> Enlistarme </a> </li>
-        <li> <a onclick="openPage(event, 'seguimiento')"> <i class="far fa-newspaper fa-lg fa-fw"></i> Seguimiento </a> </li>
-        <li> <a onclick="openPage(event, 'beneInternado')"> <i class="fas fa-house fa-lg fa-fw"></i> Beneficiados internado </a> </li>
-        <li> <a onclick="openPage(event, 'beneComedor')"> <i class="fa-solid fa-cookie-bite"></i> Beneficiados Comedor </a> </li>
+        <li> <a id="i_requisitos" class="" onclick="openPage(event, 'requisitos')"> <i class="far fa-folder-open fa-lg fa-fw"></i> Requisitos </a> </li>
+        <li> <a id="i_enlistarme" class="" onclick="openPage(event, 'enlistarme')"> <i class="fa-solid fa-user-plus"></i> &nbsp Enlistarme </a> </li>
+        <li> <a id="i_seguimiento" class="" onclick="openPage(event, 'seguimiento')"> <i class="far fa-newspaper fa-lg fa-fw"></i> Seguimiento </a> </li>
+        <li> <a id="i_beneInternado" class="" onclick="openPage(event, 'beneInternado')"> <i class="fas fa-house fa-lg fa-fw"></i> Beneficiados internado </a> </li>
+        <li> <a id="i_beneComedor" class="" onclick="openPage(event, 'beneComedor')"> <i class="fa-solid fa-cookie-bite"></i> &nbsp  Beneficiados Comedor </a> </li>
       </ul>
     </div>
 
     <!-- Requisitos ***************************************************************************************************** -->
     <div class="right tabcontent" id="requisitos">
+      <div class="card-full">
+        <br><br>
+        <h5> <i class="far fa-folder-open fa-lg fa-fw"></i>  General / Requisitos: </h5>
+        <p> 
+          Los requisitos para presentar documentos son elementos esenciales que se solicitan a los individuos para completar ciertos procesos o trámites. En este caso, para asegurar la correcta inscripción o registro en un sistema, se necesitan los siguientes documentos </p>
+      </div>
+
       <div class="card-list">
-        <div class="card">
-          <h2 class="card-title">Título de la tarjeta</h2>
-          <p>Descripción</p>
-          <ul>
-            <li>Elemento de la lista 1</li>
-            <li>Elemento de la lista 2</li>
-            <li>Elemento de la lista 3</li>
-            <li>Elemento de la lista 4</li>
-            <li>Elemento de la lista 5</li>
-            <li>Elemento de la lista 6</li>
-            <li>Elemento de la lista 7</li>
-            <li>Elemento de la lista 8</li>
-            <li>Elemento de la lista 9</li>
-            <li>Elemento de la lista 10</li>
-            <li>Elemento de la lista 11</li>
-            <li>Elemento de la lista 12</li>
-            <li>Elemento de la lista 13</li>
-            <li>Elemento de la lista 14</li>
-            <li>Elemento de la lista 15</li>
-          </ul>
+        <div class="card static-card">
+          <h2 class="card-title"> Ingresantes </h2>
+          <p>Datos necesarios:</p>
+          <ol>
+            <li>Solicitud al Director</li>
+            <li>Ficha Socioeconómica</li>
+            <li>Fachada de la casa</li>
+            <li>SISFOH (Sistema de Focalización de Hogares)</li>
+            <li>Certificado Domiciliario</li>
+            <li>Certificado Medico</li>
+            <li>Despistaje TBC</li>
+            <li>Copia DNI (Documento Nacional de Identidad) del Alumno</li>
+            <li>Copia DNI de Padres</li>
+            <li>Carta de Compromiso</li>
+            <li>Tarjeta de Cuatro Sellos</li>
+            <li>Cédula de Matrícula</li>
+          </ol>
+        </div>
+        <div class="card static-card">
+          <h2 class="card-title"> Antiguos </h2>
+          <p>Datos necesarios: </p>
+          <ol>
+            <li>Solicitud al Director</li>
+            <li>Ficha Socioeconómica</li>
+            <li>SISFOH (Sistema de Focalización de Hogares)</li>
+            <li>Despistaje TBC</li>
+            <li>Carta de Compromiso</li>
+            <li>Tarjeta de Cuatro Sellos</li>
+            <li>Cédula de Matrícula</li>
+          </ol>
         </div>
       </div>
         
       <div class="card-container">
           <div class="card">
-              <img src="assets/imgs/dbz.jpg" alt="Imagen 1" onclick="openImage('assets/imgs/dbz.jpg')">
-              <h2>Tarjeta 1</h2>
-              <p>Descripción</p>
+            <div class="card-number">1</div>
+            <img src="assets/imgs/9adb20a9-33b4-4b19-9f18-2ebdcbe16374.jpg" alt="Imagen 1" onclick="openImage('assets/imgs/dbz.jpg')">
+            <h2>Solicitud al Director</h2>
+            <p>Carta formal expresando interés en participar en el programa, evento o beneficio.</p>
           </div>
           <div class="card">
-              <img src="assets/imgs/unasimg.jpg" alt="Imagen 2" onclick="openImage('assets/imgs/unasimg.jpg')">
-              <h2>Tarjeta 2</h2>
-              <p>Descripción</p>
+            <div class="card-number">2</div>
+            <img src="assets/imgs/08ba99d6-a952-46d4-b85c-8f3bed977346.jpg" alt="Imagen 1" onclick="openImage('assets/imgs/dbz.jpg')">
+            <h2>Ficha Socioeconómica</h2>
+            <p>Un formulario que recopila información sobre la situación económica y social del solicitante, lo que puede ayudar a determinar su elegibilidad para ciertos programas.</p>
           </div>
           <div class="card">
-              <img src="assets/imgs/LogoSGA_64 (1).png" alt="Imagen 3" onclick="openImage('assets/imgs/LogoSGA_64 (1).png')">
-              <h2>Tarjeta 3</h2>
-              <p>Descripción</p>
+            <div class="card-number">3</div>
+            <img src="assets/imgs/98223b4b-132b-4f40-b65a-3deee39577ca.jpg" alt="Imagen 1" onclick="openImage('assets/imgs/dbz.jpg')">
+            <h2> SISFOH (Sistema de Focalización de Hogares):  </h2>
+            <p>Un proceso mediante el cual se verifica la situación socioeconómica del solicitante y su familia para determinar si cumplen con ciertos criterios para acceder a ciertos beneficios.</p>
           </div>
+          <div class="card">
+            <div class="card-number">3</div>
+            <img src="assets/imgs/d4f3cd5e-6c9a-4742-a169-c9b209109243.jpg" alt="Imagen 1" onclick="openImage('assets/imgs/dbz.jpg')">
+            <h2> Certificado Domiciliario:  </h2>
+            <p> Un documento emitido por la autoridad local que confirma la dirección de residencia del solicitante.</p>
+          </div>
+
       </div>
       <div id="lightbox" class="lightbox">
           <span class="close-btn" onclick="closeImage()">&times;</span>
@@ -129,72 +160,146 @@
 
     <!-- Enlistarme ***************************************************************************************************** -->
     <div class="right container mt-5 tabcontent" id="enlistarme">
-       
-        <input class="form-control" type="file" id="formFileStudent" accept=".xlsx">
-  
+
+      <input class="form-control" type="file" id="formFileStudent" accept=".xlsx">
+      <br>
+      <div class="card-full">
+        <h5> <i class="far fa-folder-open fa-lg fa-fw"></i>  General / Requisitos: </h5>
+        <p> 
+          Los requisitos para presentar documentos son elementos esenciales que se solicitan a los individuos para completar ciertos procesos o trámites. En este caso, para asegurar la correcta inscripción o registro en un sistema, se necesitan los siguientes documentos </p>
+      </div>
+
+      <div class="button-list">
+        <button class="circular-button" id="i_paso1" onclick="openPage1(event, 'paso1')">Paso 1</button>
+        <button class="circular-button" id="i_paso2" onclick="openPage1(event, 'paso2')">Paso 2</button>
+        <button class="circular-button" id="i_paso3" onclick="openPage1(event, 'paso3')">Paso 3</button>
+        <button class="circular-button" id="i_paso4" onclick="openPage1(event, 'paso4')">Paso 4</button>
+        <button class="circular-button" id="i_paso5" onclick="openPage1(event, 'paso5')">Paso 5</button>
+        <!-- Agrega más botones según sea necesario -->
+      </div>
+
+      <div class="right container mt-5  tabcontent1" id="paso1">
         <h2>Formulario de Registro</h2>
         <form id="registro-form">
-          <div class="flex bottom">
-            <div class="form-group">
-              <label for="dni">DNI</label>
-              <input type="number" class="form-control" id="dni" name="dni" required>
-              <div id="dni-error" class="text-danger"></div>
+          
+          <div class="grid-mini">
+
+            <div class="left2">
+              <div class="logo">
+                <label for="imageInput" class="image-label">
+                  <img id="imagePreview" src="assets/imgs/user.jpg" alt="">
+                  <div class="image-overlay">
+                    <span class="edit-text"> Editame! </span>
+                  </div>
+                </label>
+                <input type="file" id="imageInput" class="image-input" accept="image/*">
+              </div>
             </div>
-            <div>
-              <button type="button" class="btn btn-light" id="click_buscarDNI">  <i class="fa-solid fa-magnifying-glass"></i>  </button>
+
+            <div class="right1">
+              <div class="flex bottom">
+                <div class="form-group">
+                  <label for="dni">DNI</label>
+                  <input type="number" class="form-control" id="dni" name="dni" required>
+                  <div id="dni-error" class="text-danger"></div>
+                </div>
+                <div>
+                  <button type="button" class="btn btn-light" id="click_buscarDNI">  <i class="fa-solid fa-magnifying-glass"></i>  </button>
+                </div>
+              </div>
+      
+              <div class="form-group">
+                <label for="ap_paterno">Apellido Paterno</label>
+                <input type="text" class="form-control" id="ap_paterno" name="ap_paterno" required>
+                <div id="ap_paterno-error" class="text-danger"></div>
+              </div>
+              <div class="form-group">
+                <label for="ap_materno">Apellido Materno</label>
+                <input type="text" class="form-control" id="ap_materno" name="ap_materno" required>
+                <div id="ap_materno-error" class="text-danger"></div>
+              </div>
+              <div class="form-group">
+                <label for="ap_nombre">Nombre Completo</label>
+                <input type="text" class="form-control" id="ap_nombre" name="ap_nombre" required>
+                <div id="ap_nombre-error" class="text-danger"></div>
+              </div>
+      
+              <div class="form-group">
+                <label for="carrera">Carrera Profesional</label>
+                <select class="form-select form-select-lg mb-3" id="carrera" name="carrera">
+                    <option selected> PROFESION </option>
+                    <option value="0"> NINGUNO </option>
+                    <option value="1"> ADMINISTRACION </option>
+                    <option value="2"> AGRONOMIA </option>
+                    <option value="3"> CONTABILIDAD </option>
+                    <option value="4"> ECONOMIA </option>
+                    <option value="5"> INGENIERIA AMBIENTAL </option>
+                    <option value="6"> INGENIERIA EN CONSERVACION DE SUELOS Y AGUA </option>
+                    <option value="7"> INGENIERIA EN RECURSOS NATURALES RENOVABLES </option>
+                    <option value="8"> INGENIERIA EN INDUSTRIAS ALIMENTARIAS </option>
+                    <option value="9"> INGENIERIA EN INFORMATICA Y SISTEMAS </option>
+                    <option value="10"> INGENIERIA FORESTAL </option>
+                    <option value="11"> INGENIERIA MECANICA ELECTRICA </option>
+                    <option value="12"> ZOOTECNIA </option>
+                </select>
             </div>
+              <div class="form-group">
+                <label for="institucion">Institución Educativa</label>
+                <input type="text" class="form-control" id="institucion" name="institucion" required>
+              </div>
+              <div class="form-group">
+                <label for="institucion">Correo Institucional</label>
+                <input type="text" class="form-control" id="institucion_correo" name="institucion" required>
+              </div>
+              <div class="form-group">
+                <label for="anho_ciclo">Año/Ciclo</label>
+                <input type="number" class="form-control" id="anho_ciclo" name="anho_ciclo" required>
+                <div id="anho_ciclo-error" class="text-danger"></div>
+              </div>
+              <br>
+              <button type="submit" class="btn btn-primary">Registrar</button>
+            </div>
+
           </div>
-  
-          <div class="form-group">
-            <label for="ap_paterno">Apellido Paterno</label>
-            <input type="text" class="form-control" id="ap_paterno" name="ap_paterno" required>
-            <div id="ap_paterno-error" class="text-danger"></div>
-          </div>
-          <div class="form-group">
-            <label for="ap_materno">Apellido Materno</label>
-            <input type="text" class="form-control" id="ap_materno" name="ap_materno" required>
-            <div id="ap_materno-error" class="text-danger"></div>
-          </div>
-          <div class="form-group">
-            <label for="ap_nombre">Nombre Completo</label>
-            <input type="text" class="form-control" id="ap_nombre" name="ap_nombre" required>
-            <div id="ap_nombre-error" class="text-danger"></div>
-          </div>
-  
-          <div class="form-group">
-            <label for="carrera">Carrera Profesional</label>
-            <select class="form-select form-select-lg mb-3" id="carrera" name="carrera">
-                <option selected> PROFESION </option>
-                <option value="0"> NINGUNO </option>
-                <option value="1"> ADMINISTRACION </option>
-                <option value="2"> AGRONOMIA </option>
-                <option value="3"> CONTABILIDAD </option>
-                <option value="4"> ECONOMIA </option>
-                <option value="5"> INGENIERIA AMBIENTAL </option>
-                <option value="6"> INGENIERIA EN CONSERVACION DE SUELOS Y AGUA </option>
-                <option value="7"> INGENIERIA EN RECURSOS NATURALES RENOVABLES </option>
-                <option value="8"> INGENIERIA EN INDUSTRIAS ALIMENTARIAS </option>
-                <option value="9"> INGENIERIA EN INFORMATICA Y SISTEMAS </option>
-                <option value="10"> INGENIERIA FORESTAL </option>
-                <option value="11"> INGENIERIA MECANICA ELECTRICA </option>
-                <option value="12"> ZOOTECNIA </option>
-            </select>
-        </div>
-          <div class="form-group">
-            <label for="institucion">Institución Educativa</label>
-            <input type="text" class="form-control" id="institucion" name="institucion" required>
-          </div>
-          <div class="form-group">
-            <label for="institucion">Correo Institucional</label>
-            <input type="text" class="form-control" id="institucion_correo" name="institucion" required>
-          </div>
-          <div class="form-group">
-            <label for="anho_ciclo">Año/Ciclo</label>
-            <input type="number" class="form-control" id="anho_ciclo" name="anho_ciclo" required>
-            <div id="anho_ciclo-error" class="text-danger"></div>
-          </div>
-          <button type="submit" class="btn btn-primary">Registrar</button>
+
+         
         </form>
+      </div>
+      
+      <!-- paso 2 ***************************************************************************** -->
+      <div class="right container mt-5  tabcontent1" id="paso2">
+
+        <header>
+          <h1>Pasar de Imagen y PDF a Texto</h1>
+        </header>
+        <main>
+        
+          <label for="fileInput" class="label-file">Seleccionar archivo</label>
+          <input type="file" id="fileInput" accept=".pdf, .jpg, .jpeg, .png, .gif" />
+          <br>
+          <span id="fileName"></span> <!-- Nuevo elemento para mostrar el nombre del archivo -->  
+          <br>
+          <button id="ocrButton" disabled>Aplicar OCR</button> <!-- Botón deshabilitado por defecto -->
+          
+          <div id="resultContainer">
+              <p id="ocrResult"></p>
+          </div>
+        </main>
+        <div id="loadingModal" class="modal">
+            <div class="modal-content">
+                <div class="loader"></div>
+                <p>Cargando...</p>
+            </div>
+        </div>
+
+      </div>
+  
+      <div class="right container mt-5  tabcontent1" id="paso3">3</div>
+        
+      <div class="right container mt-5  tabcontent1" id="paso4">4</div>
+
+      <div class="right container mt-5  tabcontent1" id="paso5">5</div>
+
       </div>
 
     <!-- Seguimiento ***************************************************************************************************** -->
@@ -283,20 +388,19 @@
 
      <!-- Beneficiado comedor ***************************************************************************************************** -->
      <div class="right tabcontent" id="beneComedor">
-      
      </div>
 
   </div>
 
   
-  <footer class="footer">
-    <div class="footer-content">
-      <p class="footer-text">© 2023 ,Todos los derechos reservados</p>
-      <ul class="footer-links">
-        <li></li>
-      </ul>
-    </div>
-  </footer>
+  <!-- <footer class="footer"> -->
+    <!-- <div class="footer-content"> -->
+      <!-- <p class="footer-text">© 2023 ,Todos los derechos reservados</p> -->
+      <!-- <ul class="footer-links"> -->
+        <!-- <li></li> -->
+      <!-- </ul> -->
+    <!-- </div> -->
+  <!-- </footer> -->
   <br><br>
   <div class="panel" id="panel">
     <div class="close" onClick="mostrarPanel(false)"> X </div>
@@ -304,9 +408,12 @@
   <!-- <div class="panel visible" id="panel"><span>1</span><span>20210619</span><span>ABURTO YSUIZA, JANIRA JAMILETH</span><span>F</span><span>ADMINISTRACION</span><span>14.53</span><span>SI</span><span>ESTUDIANTE</span>
     <div class="close" onClick="mostrarPanel(false)"> X </div>
   </div> -->
-
   <script>
-    function openPage(evt, nameID) {
+    
+tabSelect = '';
+tabPasos = '';
+
+  function openPage(evt, nameID) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
@@ -316,15 +423,49 @@
       for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
       }
+      if(tabSelect != ''){
+        document.getElementById(tabSelect).classList.remove("active");
+        document.getElementById(`i_${tabSelect}`).classList.remove("active");
+        console.log("-.--> ", tabSelect);
+      }
       document.getElementById(nameID).style.display = "block";
-      evt.currentTarget.className += " active";
+      tabSelect = nameID;
+      document.getElementById(nameID).classList.add("active");
+      document.getElementById(`i_${ nameID }`).classList.add("active");
+    
     }
-    </script>
 
+    function openPage1(evt, nameID) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent1");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks1");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      if(tabPasos != ''){
+        document.getElementById(tabPasos).classList.remove("active");
+        document.getElementById(`i_${tabPasos}`).classList.remove("active");
+        console.log("-.--> ", tabPasos);
+      }
+      document.getElementById(nameID).style.display = "block";
+      tabPasos = nameID;
+      document.getElementById(nameID).classList.add("active");
+      document.getElementById(`i_${ nameID }`).classList.add("active");
+    
+    }
+
+
+    openPage('', 'requisitos');
+    openPage1('', 'paso1');
+  </script>
   <script src="https://kit.fontawesome.com/639292d40c.js" crossorigin="anonymous"></script>
   <script src="/js/app.js"> </script>
   <script src="js/formulario.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/ocr.js"></script>
 </body>
 </html>
 

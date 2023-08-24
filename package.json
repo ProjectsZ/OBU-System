@@ -4,8 +4,19 @@
   "description": "Sistema OBU de filtrado de estudiantes beneficiados en residencia y comedor",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile":"lessc css/styles.less styles.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  
+    "dependencies": {
+      "express": "^4.18.2",
+      "fs-extra": "^11.1.1",
+      "multer": "^1.4.5-lts.1",
+      "node-fetch": "^3.3.2",
+      "pdfjs-dist": "^3.9.179",
+      "tesseract.js": "^4.1.1"
+    }
+  
 }
