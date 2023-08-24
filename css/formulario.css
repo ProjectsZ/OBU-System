@@ -3,6 +3,7 @@
   display: flex;
   gap: 10px;
   justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
 .circular-button {
@@ -16,13 +17,16 @@
   background-color: #C8C8C8;
   /* Cambia el color de fondo según tu preferencia */
   color: white;
-  font-size: 14px;
+  font-size: 1.4rem;
   cursor: pointer;
   outline: none;
   transition: background-color 0.3s ease;
 }
 .circular-button:hover,
 .circular-button.active {
-  background-color: #0056b3;
+  background-color: #1ABB9C;
   /* Cambia el color de fondo al pasar el mouse */
+}
+.form-select {
+  width: 380px;
 }

@@ -42,13 +42,25 @@
     }
     
     /* Style the tab content */
-    .tabcontent, .tabcontent1 {
+    .tabcontent{
       display: none;
       padding: 6px 12px;
       border: 1px solid #ccc;
+      margin-top: -1.5rem;
       border-top: none;
-      height: 90vh;
+      height: 92vh;
       overflow-y: auto;
+      overflow-x: hidden;
+    }
+    .tabcontent1 {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      margin-top: -1.5rem;
+      margin-left: 1rem;
+      border-top: none;
+      overflow-y: hidden;
+      overflow-x: hidden;
     }
     </style>
 
@@ -85,7 +97,7 @@
     <!-- Requisitos ***************************************************************************************************** -->
     <div class="right tabcontent" id="requisitos">
       <div class="card-full">
-        <br><br>
+        <br>
         <h5> <i class="far fa-folder-open fa-lg fa-fw"></i>  General / Requisitos: </h5>
         <p> 
           Los requisitos para presentar documentos son elementos esenciales que se solicitan a los individuos para completar ciertos procesos o trámites. En este caso, para asegurar la correcta inscripción o registro en un sistema, se necesitan los siguientes documentos </p>
@@ -126,29 +138,29 @@
       </div>
         
       <div class="card-container">
-          <div class="card">
+          <div class="card" onclick="openImage('assets/imgs/9adb20a9-33b4-4b19-9f18-2ebdcbe16374.jpg')">
             <div class="card-number">1</div>
-            <img src="assets/imgs/9adb20a9-33b4-4b19-9f18-2ebdcbe16374.jpg" alt="Imagen 1" onclick="openImage('assets/imgs/dbz.jpg')">
+            <img src="assets/imgs/9adb20a9-33b4-4b19-9f18-2ebdcbe16374.jpg" alt="Imagen 1">
             <h2>Solicitud al Director</h2>
-            <p>Carta formal expresando interés en participar en el programa, evento o beneficio.</p>
+            <p class="minlength-p">Carta formal expresando interés en participar en recibir los beneficios UNAS.</p>
           </div>
-          <div class="card">
+          <div class="card" onclick="openImage('assets/imgs/08ba99d6-a952-46d4-b85c-8f3bed977346.jpg')">
             <div class="card-number">2</div>
-            <img src="assets/imgs/08ba99d6-a952-46d4-b85c-8f3bed977346.jpg" alt="Imagen 1" onclick="openImage('assets/imgs/dbz.jpg')">
+            <img src="assets/imgs/08ba99d6-a952-46d4-b85c-8f3bed977346.jpg" alt="Imagen 1" >
             <h2>Ficha Socioeconómica</h2>
-            <p>Un formulario que recopila información sobre la situación económica y social del solicitante, lo que puede ayudar a determinar su elegibilidad para ciertos programas.</p>
+            <p class="minlength-p">Un formulario que recopila información sobre la situación económica y social del solicitante, lo que puede ayudar a determinar su elegibilidad para ciertos programas.</p>
           </div>
-          <div class="card">
+          <div class="card" onclick="openImage('assets/imgs/98223b4b-132b-4f40-b65a-3deee39577ca.jpg')">
             <div class="card-number">3</div>
-            <img src="assets/imgs/98223b4b-132b-4f40-b65a-3deee39577ca.jpg" alt="Imagen 1" onclick="openImage('assets/imgs/dbz.jpg')">
-            <h2> SISFOH (Sistema de Focalización de Hogares):  </h2>
-            <p>Un proceso mediante el cual se verifica la situación socioeconómica del solicitante y su familia para determinar si cumplen con ciertos criterios para acceder a ciertos beneficios.</p>
+            <img src="assets/imgs/98223b4b-132b-4f40-b65a-3deee39577ca.jpg" alt="Imagen 1" >
+            <h2> SISFOH:  </h2>
+            <p class="minlength-p">Un proceso mediante el cual se verifica la situación socioeconómica del solicitante y su familia para determinar si cumplen con ciertos criterios para acceder a ciertos beneficios.</p>
           </div>
-          <div class="card">
-            <div class="card-number">3</div>
-            <img src="assets/imgs/d4f3cd5e-6c9a-4742-a169-c9b209109243.jpg" alt="Imagen 1" onclick="openImage('assets/imgs/dbz.jpg')">
+          <div class="card" onclick="openImage('assets/imgs/d4f3cd5e-6c9a-4742-a169-c9b209109243.jpg')" >
+            <div class="card-number">4</div>
+            <img src="assets/imgs/d4f3cd5e-6c9a-4742-a169-c9b209109243.jpg" alt="Imagen 1" >
             <h2> Certificado Domiciliario:  </h2>
-            <p> Un documento emitido por la autoridad local que confirma la dirección de residencia del solicitante.</p>
+            <p class="minlength-p"> Un documento emitido por la autoridad local que confirma la dirección de residencia del solicitante.</p>
           </div>
 
       </div>
@@ -159,22 +171,24 @@
     </div>
 
     <!-- Enlistarme ***************************************************************************************************** -->
-    <div class="right container mt-5 tabcontent" id="enlistarme">
+    <div class="right tabcontent" id="enlistarme">
 
       <input class="form-control" type="file" id="formFileStudent" accept=".xlsx">
-      <br>
+
       <div class="card-full">
-        <h5> <i class="far fa-folder-open fa-lg fa-fw"></i>  General / Requisitos: </h5>
+        <h5> <i class="far fa-folder-open fa-lg fa-fw"></i>  General / Enlistarme a los beneficios universitarios: </h5>
         <p> 
-          Los requisitos para presentar documentos son elementos esenciales que se solicitan a los individuos para completar ciertos procesos o trámites. En este caso, para asegurar la correcta inscripción o registro en un sistema, se necesitan los siguientes documentos </p>
+          A continuación se presenta una serie de pasos de las cuales se tiene que rellenar de la manera más veras posible, dado de que la información proporcionada sera base para la aceptacion o la negacion del postulante.
+        </p>
       </div>
 
       <div class="button-list">
-        <button class="circular-button" id="i_paso1" onclick="openPage1(event, 'paso1')">Paso 1</button>
-        <button class="circular-button" id="i_paso2" onclick="openPage1(event, 'paso2')">Paso 2</button>
-        <button class="circular-button" id="i_paso3" onclick="openPage1(event, 'paso3')">Paso 3</button>
-        <button class="circular-button" id="i_paso4" onclick="openPage1(event, 'paso4')">Paso 4</button>
-        <button class="circular-button" id="i_paso5" onclick="openPage1(event, 'paso5')">Paso 5</button>
+        PASOS: 
+        <button class="circular-button" id="i_paso1" onclick="openPage1(event, 'paso1')">1</button>
+        <button class="circular-button" id="i_paso2" onclick="openPage1(event, 'paso2')">2</button>
+        <button class="circular-button" id="i_paso3" onclick="openPage1(event, 'paso3')">3</button>
+        <button class="circular-button" id="i_paso4" onclick="openPage1(event, 'paso4')">4</button>
+        <button class="circular-button" id="i_paso5" onclick="openPage1(event, 'paso5')">5</button>
         <!-- Agrega más botones según sea necesario -->
       </div>
 
@@ -294,11 +308,17 @@
 
       </div>
   
-      <div class="right container mt-5  tabcontent1" id="paso3">3</div>
+      <div class="right container mt-5  tabcontent1" id="paso3">
+        Para continuar realice primero el paso 2!
+      </div>
         
-      <div class="right container mt-5  tabcontent1" id="paso4">4</div>
+      <div class="right container mt-5  tabcontent1" id="paso4">
+        Para continuar realice primero el paso 3!
+      </div>
 
-      <div class="right container mt-5  tabcontent1" id="paso5">5</div>
+      <div class="right container mt-5  tabcontent1" id="paso5">
+        Para continuar realice primero el paso 4!
+      </div>
 
       </div>
 
@@ -458,7 +478,7 @@ tabPasos = '';
     }
 
 
-    openPage('', 'requisitos');
+    openPage('', 'enlistarme');
     openPage1('', 'paso1');
   </script>
   <script src="https://kit.fontawesome.com/639292d40c.js" crossorigin="anonymous"></script>
@@ -466,6 +486,8 @@ tabPasos = '';
   <script src="js/formulario.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/ocr.js"></script>
+  <script src="js/card.js"></script>
+  <script src='https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js'></script>
 </body>
 </html>
 
