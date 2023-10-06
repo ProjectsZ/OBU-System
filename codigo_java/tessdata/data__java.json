@@ -1,0 +1,534 @@
+[
+    {
+        "coincidence_text": "Smith",
+        "size_kb": 64.234,
+        "load_time_ms": 0.0278,
+        "name": "C:\\Users\\User1\\Documents\\file1.jpg",
+        "coincidence": 42,
+        "_id": 12345678,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "Johnson",
+        "size_kb": 32.123,
+        "load_time_ms": 0.0157,
+        "name": "C:\\Users\\User2\\Pictures\\image.png",
+        "coincidence": 58,
+        "_id": 98765432,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "Williams",
+        "size_kb": 128.567,
+        "load_time_ms": 0.0412,
+        "name": "C:\\Users\\User3\\Documents\\photo.jpg",
+        "coincidence": 73,
+        "_id": 45678901,
+        "type": "jpeg"
+    },
+    {
+        "coincidence_text": "Jones",
+        "size_kb": 78.345,
+        "load_time_ms": 0.0213,
+        "name": "C:\\Users\\User4\\Pictures\\picture.png",
+        "coincidence": 60,
+        "_id": 23456789,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "Brown",
+        "size_kb": 96.789,
+        "load_time_ms": 0.0356,
+        "name": "C:\\Users\\User5\\Documents\\image.jpg",
+        "coincidence": 85,
+        "_id": 34567890,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "Davis",
+        "size_kb": 45.678,
+        "load_time_ms": 0.0189,
+        "name": "C:\\Users\\User6\\Pictures\\snapshot.png",
+        "coincidence": 70,
+        "_id": 56789012,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "Miller",
+        "size_kb": 112.345,
+        "load_time_ms": 0.0324,
+        "name": "C:\\Users\\User7\\Documents\\photo.jpeg",
+        "coincidence": 55,
+        "_id": 67890123,
+        "type": "jpeg"
+    },
+    {
+        "coincidence_text": "Wilson",
+        "size_kb": 54.987,
+        "load_time_ms": 0.0256,
+        "name": "C:\\Users\\User8\\Pictures\\picture.jpg",
+        "coincidence": 48,
+        "_id": 78901234,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "Moore",
+        "size_kb": 76.234,
+        "load_time_ms": 0.0291,
+        "name": "C:\\Users\\User9\\Documents\\image.png",
+        "coincidence": 62,
+        "_id": 89012345,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "Taylor",
+        "size_kb": 87.456,
+        "load_time_ms": 0.0237,
+        "name": "C:\\Users\\User10\\Pictures\\snapshot.jpg",
+        "coincidence": 77,
+        "_id": 90123456,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "Anderson",
+        "size_kb": 43.789,
+        "load_time_ms": 0.0165,
+        "name": "C:\\Users\\User11\\Documents\\picture.png",
+        "coincidence": 52,
+        "_id": 12345678,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "Thomas",
+        "size_kb": 65.432,
+        "load_time_ms": 0.0220,
+        "name": "C:\\Users\\User12\\Pictures\\photo.jpg",
+        "coincidence": 67,
+        "_id": 23456789,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "Jackson",
+        "size_kb": 97.654,
+        "load_time_ms": 0.0368,
+        "name": "C:\\Users\\User13\\Documents\\image.jpeg",
+        "coincidence": 81,
+        "_id": 34567890,
+        "type": "jpeg"
+    },
+    {
+        "coincidence_text": "White",
+        "size_kb": 32.987,
+        "load_time_ms": 0.0174,
+        "name": "C:\\Users\\User14\\Pictures\\snapshot.png",
+        "coincidence": 64,
+        "_id": 45678901,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "Harris",
+        "size_kb": 75.678,
+        "load_time_ms": 0.0283,
+        "name": "C:\\Users\\User15\\Documents\\photo.jpg",
+        "coincidence": 49,
+        "_id": 56789012,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "Martin",
+        "size_kb": 88.123,
+        "load_time_ms": 0.0241,
+        "name": "C:\\Users\\User16\\Pictures\\picture.jpg",
+        "coincidence": 72,
+        "_id": 67890123,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "Thompson",
+        "size_kb": 57.543,
+        "load_time_ms": 0.0203,
+        "name": "C:\\Users\\User17\\Documents\\image.png",
+        "coincidence": 53,
+        "_id": 78901234,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "Garcia",
+        "size_kb": 66.789,
+        "load_time_ms": 0.0263,
+        "name": "C:\\Users\\User18\\Pictures\\snapshot.jpg",
+        "coincidence": 68,
+        "_id": 89012345,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "Martinez",
+        "size_kb": 54.321,
+        "load_time_ms": 0.0198,
+        "name": "C:\\Users\\User19\\Documents\\picture.png",
+        "coincidence": 47,
+        "_id": 90123456,
+        "type": "png"
+    },
+{
+        "coincidence_text": "Reyes",
+        "size_kb": 72.45,
+        "load_time_ms": 0.032,
+        "name": "solicitud_ALANIA_REYES.jpg",
+        "coincidence": 65,
+        "_id": 98765432,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "Trinidad",
+        "size_kb": 58.21,
+        "load_time_ms": 0.025,
+        "name": "solicitud_ALANIA_TRINIDAD.png",
+        "coincidence": 72,
+        "_id": 23456789,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "Salgado",
+        "size_kb": 64.77,
+        "load_time_ms": 0.028,
+        "name": "solicitud_YORDIN_ROSSEL.jpeg",
+        "coincidence": 58,
+        "_id": 12345678,
+        "type": "jpeg"
+    },
+    {
+        "coincidence_text": "VIGO",
+        "size_kb": 53.89,
+        "load_time_ms": 0.023,
+        "name": "solicitud_ALARCON_SALGADO.png",
+        "coincidence": 64,
+        "_id": 34567890,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "DIAZ",
+        "size_kb": 76.34,
+        "load_time_ms": 0.035,
+        "name": "solicitud_ALDAVE_VIGO.jpg",
+        "coincidence": 77,
+        "_id": 45678901,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "AVILA",
+        "size_kb": 68.21,
+        "load_time_ms": 0.029,
+        "name": "solicitud_ALDAVE_VIGO.png",
+        "coincidence": 68,
+        "_id": 56789012,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "CULANTRES",
+        "size_kb": 89.76,
+        "load_time_ms": 0.041,
+        "name": "solicitud_ALVAREZ_CULANTRES.jpeg",
+        "coincidence": 59,
+        "_id": 78901234,
+        "type": "jpeg"
+    },
+    {
+        "coincidence_text": "SOUZA",
+        "size_kb": 57.89,
+        "load_time_ms": 0.024,
+        "name": "solicitud_ALVAREZ_SOUZA.jpg",
+        "coincidence": 72,
+        "_id": 89012345,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "MENDOZA",
+        "size_kb": 71.23,
+        "load_time_ms": 0.031,
+        "name": "solicitud_ALVITEZ_MENDOZA.png",
+        "coincidence": 63,
+        "_id": 90123456,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "VIDAL",
+        "size_kb": 63.45,
+        "load_time_ms": 0.027,
+        "name": "solicitud_AMANCIO_VIDAL.jpeg",
+        "coincidence": 75,
+        "_id": 34567890,
+        "type": "jpeg"
+    },
+{
+        "coincidence_text": "RICALDI",
+        "size_kb": 72.45,
+        "load_time_ms": 0.032,
+        "name": "solicitud_CIPRIANO_RICALDI.jpg",
+        "coincidence": 100,
+        "_id": 98765432,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "SOTO",
+        "size_kb": 58.21,
+        "load_time_ms": 0.025,
+        "name": "solicitud_CIRIACO_SOTO.png",
+        "coincidence": 100,
+        "_id": 23456789,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "JARA",
+        "size_kb": 64.77,
+        "load_time_ms": 0.028,
+        "name": "solicitud_CLAUDIO_JARA.jpeg",
+        "coincidence": 100,
+        "_id": 12345678,
+        "type": "jpeg"
+    },
+    {
+        "coincidence_text": "INOCENTE",
+        "size_kb": 53.89,
+        "load_time_ms": 0.023,
+        "name": "solicitud_CLEMENTE_INOCENTE.png",
+        "coincidence": 100,
+        "_id": 34567890,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "MIRAVAL",
+        "size_kb": 76.34,
+        "load_time_ms": 0.035,
+        "name": "solicitud_CLEMENTE_MIRAVAL.jpg",
+        "coincidence": 100,
+        "_id": 45678901,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "MARTIN",
+        "size_kb": 68.21,
+        "load_time_ms": 0.029,
+        "name": "solicitud_CONDOR_MARTIN.png",
+        "coincidence": 100,
+        "_id": 56789012,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "MAÑUICO",
+        "size_kb": 89.76,
+        "load_time_ms": 0.041,
+        "name": "solicitud_CONDORI_MAÑUICO.jpeg",
+        "coincidence": 100,
+        "_id": 78901234,
+        "type": "jpeg"
+    },
+    {
+        "coincidence_text": "FLORES",
+        "size_kb": 57.89,
+        "load_time_ms": 0.024,
+        "name": "solicitud_CONTRERAS_FLORES.jpg",
+        "coincidence": 0,
+        "_id": 89012345,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "CARRASCO",
+        "size_kb": 71.23,
+        "load_time_ms": 0.031,
+        "name": "solicitud_CORNEJO_CARRASCO.png",
+        "coincidence": 100,
+        "_id": 90123456,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "DIAZ",
+        "size_kb": 63.45,
+        "load_time_ms": 0.027,
+        "name": "solicitud_CORREA_DIAZ.jpeg",
+        "coincidence": 0,
+        "_id": 34567890,
+        "type": "jpeg"
+    },
+{
+        "coincidence_text": "SAYES",
+        "size_kb": 72.45,
+        "load_time_ms": 0.032,
+        "name": "solicitud_DURAN_SAYES.jpg",
+        "coincidence": 100,
+        "_id": 98765432,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "CASTRO",
+        "size_kb": 58.21,
+        "load_time_ms": 0.025,
+        "name": "solicitud_ECHEVARRIA_CASTRO.png",
+        "coincidence": 0,
+        "_id": 23456789,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "RIVERA",
+        "size_kb": 64.77,
+        "load_time_ms": 0.028,
+        "name": "solicitud_GARCIA_RIVERA.jpeg",
+        "coincidence": 100,
+        "_id": 12345678,
+        "type": "jpeg"
+    },
+    {
+        "coincidence_text": "TITO",
+        "size_kb": 53.89,
+        "load_time_ms": 0.023,
+        "name": "solicitud_GUADALUPE_TITO.png",
+        "coincidence": 0,
+        "_id": 34567890,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "RAMOS",
+        "size_kb": 76.34,
+        "load_time_ms": 0.035,
+        "name": "solicitud_HERRERA_RAMOS.jpg",
+        "coincidence": 100,
+        "_id": 45678901,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "ESPINOSA",
+        "size_kb": 68.21,
+        "load_time_ms": 0.029,
+        "name": "solicitud_HUAMAN_ESPINOSA.png",
+        "coincidence": 0,
+        "_id": 56789012,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "ALANIA",
+        "size_kb": 89.76,
+        "load_time_ms": 0.041,
+        "name": "solicitud_ESPINOZA_ALANIA.jpeg",
+        "coincidence": 100,
+        "_id": 78901234,
+        "type": "jpeg"
+    },
+    {
+        "coincidence_text": "PASCACIO",
+        "size_kb": 57.89,
+        "load_time_ms": 0.024,
+        "name": "solicitud_ESPARZA_PASCACIO.jpg",
+        "coincidence": 100,
+        "_id": 89012345,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "TINEO",
+        "size_kb": 71.23,
+        "load_time_ms": 0.031,
+        "name": "solicitud_FLORES_TINEO.png",
+        "coincidence": 100,
+        "_id": 90123456,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "CUENCA",
+        "size_kb": 63.45,
+        "load_time_ms": 0.027,
+        "name": "solicitud_HERNANDEZ_CUENCA.jpeg",
+        "coincidence": 0,
+        "_id": 34567890,
+        "type": "jpeg"
+    },
+{
+        "coincidence_text": "SANCHEZ",
+        "size_kb": 72.45,
+        "load_time_ms": 0.032,
+        "name": "solicitud_GOMEZ_SANCHEZ.jpg",
+        "coincidence": 15,
+        "_id": 98765432,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "MORALES",
+        "size_kb": 58.21,
+        "load_time_ms": 0.025,
+        "name": "solicitud_JESUS_MORALES.png",
+        "coincidence": 28,
+        "_id": 23456789,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "VALVERDE",
+        "size_kb": 64.77,
+        "load_time_ms": 0.028,
+        "name": "solicitud_DOMINGUEZ_VALVERDE.jpeg",
+        "coincidence": 7,
+        "_id": 12345678,
+        "type": "jpeg"
+    },
+    {
+        "coincidence_text": "CIEZA",
+        "size_kb": 53.89,
+        "load_time_ms": 0.023,
+        "name": "solicitud_GUERRERO_CIEZA.png",
+        "coincidence": 22,
+        "_id": 34567890,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "VARGAS",
+        "size_kb": 76.34,
+        "load_time_ms": 0.035,
+        "name": "solicitud_GUEVARA_VARGAS.jpg",
+        "coincidence": 5,
+        "_id": 45678901,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "BAUTISTA",
+        "size_kb": 68.21,
+        "load_time_ms": 0.029,
+        "name": "solicitud_HERRERA_BAUTISTA.png",
+        "coincidence": 11,
+        "_id": 56789012,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "VASQUEZ",
+        "size_kb": 89.76,
+        "load_time_ms": 0.041,
+        "name": "solicitud_HUAMAN_VASQUEZ.jpeg",
+        "coincidence": 31,
+        "_id": 78901234,
+        "type": "jpeg"
+    },
+    {
+        "coincidence_text": "HUAMANCAJA",
+        "size_kb": 57.89,
+        "load_time_ms": 0.024,
+        "name": "solicitud_HUAMANCAJA_MELCHOR.jpg",
+        "coincidence": 14,
+        "_id": 89012345,
+        "type": "jpg"
+    },
+    {
+        "coincidence_text": "AGUILAR",
+        "size_kb": 71.23,
+        "load_time_ms": 0.031,
+        "name": "solicitud_ISIDRO_GARRIDO.png",
+        "coincidence": 33,
+        "_id": 90123456,
+        "type": "png"
+    },
+    {
+        "coincidence_text": "CANALES",
+        "size_kb": 63.45,
+        "load_time_ms": 0.027,
+        "name": "solicitud_FIGUEREDO_CANALES.jpeg",
+        "coincidence": 9,
+        "_id": 34567890,
+        "type": "jpeg"
+    }
+
+]

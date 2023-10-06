@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado</title>
+</head>
+<body>
+    <h1>Texto convertido:</h1>
+    <p>{{ text }}</p>
+
+    {% for i in range(num_images) %}
+        <h1>Imagen original de la imagen {{i+1}}:</h1>
+        <img src="{{ url_for('uploaded_file', filename=f'image_{i+1}.jpeg') }}" alt="Imagen {{i+1}}">
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,8 @@
+* IMPORTAR LIBRERIAS (carpeta libs)
+- lectura/escritura xls
+- OCR
+- lectura/escritura json
+
+* CREAR UNA CARPETA : 
+- C:\Users\Skyrider\Pictures\tessdata
+  que contenga el archivo: data_java.json, eng.traineddata, RELACION-COMEDOR.xlsx, spa.traineddata
